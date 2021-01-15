@@ -5,6 +5,7 @@
 export const environment = {
   production: false
 };
+export const baseUrl = `http://34.121.159.9/customers/ingresar`;
 
 /*
  * For easier debugging in development mode, you can import the following file

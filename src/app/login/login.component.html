@@ -1,0 +1,48 @@
+<!-- <div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="25">
+        <mat-toolbar color="primary">Login Page</mat-toolbar>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" [formGroup]="formGroup" (ngSubmit)="loginProces()">
+            <mat-form-field>
+                <input matInput placeholder="Username" formControlName="email">
+            </mat-form-field>
+          
+            <mat-form-field>
+                <input matInput type="password" placeholder="Password" formControlName="password">
+            </mat-form-field>
+            <button mat-raised-button type="submit">Login</button>
+          </form>          
+    </mat-card>
+</div> -->
+
+<form class="login-form" [formGroup]="formGroup" (ngSubmit)="loginProces()">
+    <div class="imgcontainer">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar2.png"
+        alt="Avatar"
+        class="avatar"
+      />
+    </div>
+  
+    <div class="container">
+      <div class="container-inputs">
+        <!-- <label for="uname"><b>Username</b></label> -->
+        <input type="text" placeholder="Username" formControlName="email"/>
+  
+        <!-- <label for="psw"><b>Password</b></label> -->
+        <input type="password" placeholder="Password" formControlName="password" />
+        <div class="container-button">
+          <button type="submit">Login</button>
+        </div>
+        
+      </div>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" /> Remember me
+      </label>
+    </div>
+  
+    <div class="container">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+  
